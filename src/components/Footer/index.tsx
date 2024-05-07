@@ -30,7 +30,7 @@ export function Footer() {
             className="rounded-l-lg h-12 w-64 mt-10 px-5 py-4 "
             placeholder="Email address"
           />
-          <button className="text-sky-950 font-semibold w-36 h-12 bg-emerald-500 rounded-r-lg hover:bg-opacity-90 hover:text-white">
+          <button className="text-sky-950 font-semibold w-36 h-12 bg-emerald-500 rounded-r-lg hover:bg-emerald-400 transition delay-100">
             SUBSCRIBE
           </button>
         </div>
