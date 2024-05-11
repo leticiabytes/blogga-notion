@@ -9,7 +9,7 @@ export async function notionDatabase() {
     filter: {
       property: "Status",
       status: {
-        equals: "Done",
+        equals: "Published",
       },
     },
   });
