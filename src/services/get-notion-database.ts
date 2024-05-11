@@ -14,5 +14,5 @@ export async function notionDatabase() {
     },
   });
 
-  return posts.results as PostsModel[];
+  return { posts: posts.results as PostsModel[] };
 }
