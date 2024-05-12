@@ -9,10 +9,10 @@ export async function notionDatabase() {
     filter: {
       property: "Status",
       status: {
-        equals: "Done",
+        equals: "Published",
       },
     },
   });
 
-  return posts.results as PostsModel[];
+  return { posts: posts.results as PostsModel[] };
 }
