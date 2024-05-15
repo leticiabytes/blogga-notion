@@ -8,15 +8,15 @@ export async function Posts() {
 
   return (
     <>
-      {posts.map((post) => (
-        <div className="mb-40 mx-auto w-[970px]" key={post.id}>
-          <div className="flex flex-col mt-24">
-            <p className="text-cloud-burst-950 text-4xl font-bold">
-              Design Tools
-            </p>
-          </div>
+      <div className="mb-40 mx-auto w-[970px]">
+        <div className="flex flex-col mt-24">
+          <p className="text-cloud-burst-950 text-4xl font-bold">
+            Design Tools
+          </p>
+        </div>
 
-          <div>
+        {posts.map((post) => (
+          <div key={post.id}>
             <hr className="w-full border-1 my-10" />
 
             <Link href="/" className="flex justify-between">
@@ -41,8 +41,8 @@ export async function Posts() {
               />
             </Link>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </>
   );
 }
