@@ -21,7 +21,7 @@ export default async function PagePost({ otherPostsCategory, slug }: Props) {
       {/* Other posts */}
       <Posts />
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
